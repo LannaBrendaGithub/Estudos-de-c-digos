@@ -1,7 +1,7 @@
 /* 
 position: static(padrão) não aceita valores de top, bottom, right e left
 position: fixed, fixa o elemento na tela
-position: sticky, age como adesivo, fixa o elemento só onde eu determinar
+position: sticky, age como adesivo, fixa o elemento só onde eu determinar, ele começa fixo até certo momento
 position: relative, posição relativa a posição iniciaç dele
 position: absolute, posição absoluta(fixa) a algum elemento ou a página
     - SE não tiver pai / pai for static -> posiciona referente a página
@@ -25,6 +25,11 @@ propriedade:
   height: 350px;
   width: 350px;
   background-color: #ff1396;
+  position: sticky;
+  opacity: 0.5;/* opacidade */
+  margin: 200px;
+  top: 5px;
+  /* top: 35px; - movimenta a relação ao topo, pode ser utilizado em qualquer lado*/
 }
 .div-son {
   height: 150px;
@@ -32,7 +37,7 @@ propriedade:
   background-color: #ffff00;
 }
 .outra-div {
-  background-color: bisque;
+  background-color: rgb(255, 217, 170);
   height: 100px;
   width: 100px;
 }
