@@ -1,0 +1,35 @@
+/*
+ class - serve para identificar vários elementos, vários elementos HTML podem usar a mesma classe e conseguimos estiliza-los no CSS; exemplo funciona como o CEP da rua
+
+ id - serve apenas para UM elemento, usado apenas para um elemento especifico, usados uma vez na página; exemplo: funciona como seu CPF que é único
+*/
+
+/* h1 {
+  background-color: cornflowerblue;
+  color: antiquewhite;
+}
+--id--
+id = "nome" - html
+#titulo {
+  color: red;
+  font-size: 55px;
+}
+#paragrafo {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+#botao {
+  background: green;
+}
+#outro-botao {
+  background: chocolate;
+} */
+.texto{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+.botao{
+    background: purple;
+    background-color: darkmagenta;
+}

@@ -1,0 +1,15 @@
+/* box sizing 
+    por padrão vem content sempre soma os tamanhos da altura e largura
+
+    border - não altera o tamanho da altura e largura, e utiliza o que já está pré definido, é o mais utilizado
+*/
+*{
+    box-sizing: border-box;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: peru;
+    padding: 20px;
+    border: 10px solid cyan;
+}
