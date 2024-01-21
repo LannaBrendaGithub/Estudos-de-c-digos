@@ -1,0 +1,44 @@
+/* 
+position: static(padrão) não aceita valores de top, bottom, right e left
+position: fixed, fixa o elemento na tela
+position: sticky, age como adesivo, fixa o elemento só onde eu determinar, ele começa fixo até certo momento
+position: relative, posição relativa a posição inicial dele, referencia a posição inicial dele
+position: absolute, posição absoluta a algum elemento ou a página
+    - SE não tiver pai / pai for static -> posiciona referente a página/tela
+    - SE o pai NÃO for static -> posiciona referente ao pai
+
+propriedade:
+- Top
+- Bottom
+- Left
+- Right
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 200vh;
+  width: 200vw;
+}
+
+.div-dad {
+  height: 350px;
+  width: 350px;
+  background-color: #ff1396;
+  position: absolute;
+  opacity: 0.5; /* opacidade */
+  /* top: 35px; - movimenta a relação ao topo, pode ser utilizado em qualquer lado*/
+}
+.div-son {
+  height: 150px;
+  width: 150px;
+  background-color: #ffff00;
+}
+.outra-div {
+  background-color: rgb(255, 217, 170);
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
