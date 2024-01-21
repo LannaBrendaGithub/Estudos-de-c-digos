@@ -2,9 +2,9 @@
 position: static(padrão) não aceita valores de top, bottom, right e left
 position: fixed, fixa o elemento na tela
 position: sticky, age como adesivo, fixa o elemento só onde eu determinar, ele começa fixo até certo momento
-position: relative, posição relativa a posição inicial dele
-position: absolute, posição absoluta(fixa) a algum elemento ou a página
-    - SE não tiver pai / pai for static -> posiciona referente a página
+position: relative, posição relativa a posição inicial dele, referencia a posição inicial dele
+position: absolute, posição absoluta a algum elemento ou a página
+    - SE não tiver pai / pai for static -> posiciona referente a página/tela
     - SE o pai NÃO for static -> posiciona referente ao pai
 
 propriedade:
@@ -25,10 +25,8 @@ propriedade:
   height: 350px;
   width: 350px;
   background-color: #ff1396;
-  position: sticky;
-  opacity: 0.5;/* opacidade */
-  margin: 200px;
-  top: 5px;
+  position: absolute;
+  opacity: 0.5; /* opacidade */
   /* top: 35px; - movimenta a relação ao topo, pode ser utilizado em qualquer lado*/
 }
 .div-son {
@@ -40,4 +38,7 @@ propriedade:
   background-color: rgb(255, 217, 170);
   height: 100px;
   width: 100px;
+  position: relative;
+  top: 20px;
+  left: 20px;
 }
