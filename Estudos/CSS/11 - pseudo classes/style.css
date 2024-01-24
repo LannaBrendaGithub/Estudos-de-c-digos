@@ -1,0 +1,90 @@
+/* mudar estilo ou selecionar os seletores em momentos especificos */
+/* pode ser usados em ids class */
+/* 
+:active - quando o elemento está ativo, ou seja, está sendo pressionado
+:visited - seleciona o link que foi visitado
+:hover - quando o mouse passe em cima do elemento
+:checked - usado em radio / checkbox / select
+:disabled - elemento desabilitado / button / input
+:enabled - elemento está habilitado
+:focus - é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento
+:read-only - seleciona input ou textarea que são apenas leitura
+:empty - elemento que não tem filho
+
+:first-child - primeiro filho / ex: primeiro list item de uma unordered list/ primeiro span de uma div
+:first-of-type - primeiro elemento de seu tipo entre os filhos de seu elemento pai, ex: o primeiro titulo ou primeiro paragráfo
+:last-child - ultimo filho
+:last-of-type - ultimo elemento de seu tipo entre os filhos de seu elemento pai, ex: o ultimo titulo ou primeiro paragráfo
+:not() - estiliza od elementos, exceto o que está dentro do ()
+:nth-child() - seleciona o elemento baseado na sua posição. Ex: nth-child(3)
+:nth-last-child() - seleciona o elemento baseado na sua posição, contando de trás para frente
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(152, 222, 135);
+}
+a:active {
+  font-style: italic;
+}
+a:visited {
+  color: lightgreen;
+} */
+input {
+  border: 1px solid palevioletred;
+  border-radius: 2px;
+}
+input:focus {
+  border: 1px solid seagreen;
+  outline: none;
+  border-radius: 2px;
+}
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  color: wheat;
+}
+.container:hover {
+  height: 100px;
+  width: 100px;
+  background-color: silver;
+  color: teal;
+  font-family: "Times New Roman", Times, serif;
+}
+.container:empty {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(26, 127, 29);
+  color: rgb(223, 9, 223);
+}
+li:first-child {
+  color: purple;
+}
+li:last-child {
+  color: rgb(248, 37, 72);
+}
+ul:first-child {
+  color: blue;
+}
+ul:last-child {
+  color: rgb(105, 235, 105);
+}
+span:first-of-type {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+}
+span:last-of-type {
+  color: darkgoldenrod;
+  font-style: italic; 
+}
+.outro-container :not(p) {
+  color: rgb(47, 95, 107);
+}
