@@ -1,0 +1,40 @@
+/* Pseudo elementos Forma de estilizar de forma espeficica alguns elementos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  border: 1px solid salmon;
+}
+
+input::placeholder {
+  color: lawngreen;
+}
+p::first-letter {
+  color: blueviolet;
+}
+p::first-line {
+  color: lightcoral;
+}
+
+a {
+  color: chocolate;
+}
+a::before {
+  content: "⭐";
+}
+a::after {
+  content: "🐛";
+}
+
+a:hover::after {
+  content: "🦋";
+}
+a:hover::before {
+  content: "🌟";
+}
+a:hover {
+  color: lightcoral;
+}
