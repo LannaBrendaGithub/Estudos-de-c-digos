@@ -27,3 +27,13 @@
   width: 400px;
   height: 450px;
 }
+h1{
+  font-size: 70px;
+  line-height: 80px;
+  color:#5D5D7D;
+}
+p{
+  font-size: 28px;
+  line-height: 48px;
+  color:#5D5D7D;
+}
