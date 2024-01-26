@@ -28,7 +28,7 @@
   top: 20%;
   right: 120px;
   width: 400px;
-  height: 450px;
+  height: 480px;
 }
 h1{
   font-size: 70px;
@@ -62,4 +62,24 @@ button:hover{
 }
 button:active{
   opacity: .6;
+}
+
+a{
+  font-size: 28px;
+  line-height: 41px;
+  color: #5D5D7D;
+  margin-right: 41px;
+  cursor: pointer;
+}
+a:nth-child(2){
+  opacity: .4;
+}
+a:hover{
+  opacity: .4;
+}
+a:active{
+  opacity: .8;
+}
+header{
+  margin: 24px 0 0 57px;
 }
