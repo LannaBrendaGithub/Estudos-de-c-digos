@@ -123,5 +123,9 @@ header {
   button{
     margin: 0 auto;
     display: block;
+    width: 160px;
+    height: 42px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
